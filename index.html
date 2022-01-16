@@ -4,9 +4,168 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>This Is Me</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav>
+          <ul class="nav header__list">
+            <li>
+              <a href="#" class="nav__list-link header__list-link">Who I am</a>
+            </li>
+            <li>
+              <a href="#" class="nav__list-link header__list-link"
+                >What I say</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav__list-link header__list-link"
+                >What I'm learning</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav__list-link header__list-link"
+                >Talk to me</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <img
+          src="./images/professional-headshot.jpg"
+          alt="professional headshot of me"
+          class="header__img"
+        />
+        <h1 class="header__title">Jordan Roberson</h1>
+      </header>
+      <section class="quote">
+        <img
+          src="./images/quote-icon.png"
+          alt="quote-icon"
+          class="quote__icon"
+          style="width: 800px"
+        />
+
+        <h2 class="quote__title">
+          The only way to do great work is to love what you do.
+        </h2>
+        <p class="quote__subtitle">Steve Jobs</p>
+      </section>
+      <section class="about">
+        <h2 class="sidetitle about__title">Who I am</h2>
+        <div class="about__column about__column_left">
+          <!-- <img
+            src="./images/img-family.jpeg"
+            alt="picture of my family"
+            class="about__img"
+          /> -->
+        </div>
+        <div class="about__column about__column_right">
+          <h3 class="about__column-title">
+            My name is Jordan Roberson. I am currently a student at Practicum by
+            Yandex, learning to become a full stack web developer
+          </h3>
+          <p class="about__column-text">
+            I currently work as an Autonomous Nurse Practitioner in my own
+            clinic. What does that mean? I am able to work INDEPENDENTLY without
+            a physician over me. I have been a nurse for almost 10 years and
+            worked as a nurse practitioner for almost 5.
+          </p>
+          <p class="about__column-text">
+            I first became interested in web development when I was around 10
+            years old...messing around with livejournal and neopets. I fell in
+            love with the ability to alter things exactly how I wanted them. I
+            was originally a computer science major however was told that since
+            I am a woman that I would never succeed. Being a young and
+            impressionable 18 year old I decided to then change my major to
+            nursing. I loved nursing however I've always been beyond passionate
+            with technology. With the COVID rise I feel that healthcare has gone
+            in more of a business direction versus a patient centered model.
+            Thus resulting in my decision to pursue tech specifically web
+            development.
+          </p>
+        </div>
+      </section>
+      <section class="learning">
+        <h2 class="sidetitle learning__title">What I'm Learning</h2>
+        <ul class="learning__list">
+          <li class="learning__list_items learning__list_items_strikeout">
+            Basics of HTML
+          </li>
+          <li class="learning__list_items learning__list_items_strikeout">
+            Advanced HTML & CSS
+          </li>
+          <li class="learning__list_items">
+            Adaptive Web Design and Working with Layouts
+          </li>
+          <li class="learning__list_items">
+            Basic Javascript and Working with the Browser
+          </li>
+          <li class="learning__list_items">Applied Javascript</li>
+          <li class="learning__list_items">Creating an Interface with React</li>
+          <li class="learning__list_items">
+            Back-End Basics for Web Developers
+          </li>
+          <li class="learning__list_items">Final Project</li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h2 class="sidetitle contact__title">Talk to me</h2>
+        <form class="contact__form" action="#">
+          <input
+            class="contact__form_input"
+            type="text"
+            placeholder="name"
+          /><br />
+          <input
+            class="contact__form_input contact__form_input_email"
+            type="email"
+            placeholder="jordanrobersoncodes@gmail.com"
+          /><br />
+          <textarea
+            class="contact__form_input contact__form_input_textarea"
+            placeholder="message"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea
+          ><br />
+          <button type="submit" class="contact__form_btn">send</button>
+        </form>
+      </section>
+      <footer class="footer">
+        <nav>
+          <ul class="nav footer__list">
+            <li>
+              <a href="#" class="nav__list-link footer__list-link">Who I am</a>
+            </li>
+            <li>
+              <a href="#" class="nav__list-link footer__list-link"
+                >What I say</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav__list-link footer__list-link"
+                >What I'm learning</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav__list-link footer__list-link"
+                >Talk to me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>

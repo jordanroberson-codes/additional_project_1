@@ -1,0 +1,275 @@
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  background-color: #292929;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  z-index: 3;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav__list-link {
+  text-decoration: none;
+  color: #808080;
+  font-size: 18px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.header__list-link {
+  padding-right: 30px;
+
+  margin-top: 0;
+}
+
+.header__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 8px solid white;
+  transition: all 3s;
+  box-shadow: 0 0 0 7px #202020;
+  display: block;
+  margin: 80px auto;
+}
+
+.header__img:hover {
+  transform: scale(1.2);
+}
+
+.header__title {
+  text-align: center;
+  color: #808080;
+  font-size: 5em;
+  font-weight: normal;
+}
+
+.quote {
+  background-color: black;
+  height: 200px;
+  position: relative;
+  padding: 80px 0;
+}
+
+.quote__icon {
+  position: absolute;
+  top: -215px;
+  left: -170px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.quote__title {
+  color: white;
+  font-style: italic;
+  text-align: left;
+  font-weight: 200;
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 5em;
+  z-index: 2;
+  left: 100px;
+}
+
+.quote__subtitle {
+  color: white;
+  text-align: left;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  font-size: 26px;
+}
+
+.about {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  z-index: 4;
+  background-color: #808080;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.sidetitle {
+  position: absolute;
+  z-index: 5;
+}
+
+.about__title {
+  color: #b1b1b1;
+  transform: rotate(-90deg);
+  right: -330px;
+  bottom: 125px;
+  font-size: 175px;
+}
+
+.about__img {
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.about__column_left {
+  float: left;
+  background-image: url(../images/img-family.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 30%;
+  position: relative;
+  z-index: 9;
+}
+
+.about__column_right {
+  float: right;
+}
+
+.about__column-title {
+  color: white;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 300;
+  padding-top: 50px;
+  z-index: 6;
+}
+
+.about__column-text {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  z-index: 7;
+  position: relative;
+  padding-top: 20px;
+  font-size: 1.4em;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.learning {
+  background-color: #c4c4c4;
+  margin: 0;
+  position: relative;
+  padding: 30px;
+}
+
+.learning__title {
+  transform: rotate(90deg);
+  color: #d3d3d3;
+  font-size: 175px;
+  left: -650px;
+  top: 450px;
+}
+
+.learning__list {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  padding: 175px;
+  font-size: 50px;
+  line-height: 2.5;
+  font-weight: bold;
+}
+
+.learning__list_items_strikeout {
+  text-decoration: line-through;
+}
+
+.contact {
+  background-color: #292929;
+  padding: 150px 0;
+  position: relative;
+}
+
+.contact__form {
+  text-align: center;
+}
+
+.contact__form_input {
+  width: 500px;
+  height: 60px;
+  margin-top: 20px;
+  background-color: #949494;
+  font-size: 25px;
+  padding: none;
+}
+.contact__form_input::placeholder {
+  color: #1b1b1b;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.contact__form_input_email::placeholder {
+  color: white;
+  padding-left: 10px;
+}
+
+.contact__form_input_textarea {
+  height: 250px;
+}
+
+.contact__form_btn {
+  width: 506px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  font-size: 30px;
+  transition: all 200ms;
+}
+
+.contact__form_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact__title {
+  color: #b1b1b1;
+  transform: rotate(-90deg);
+  right: -290px;
+  bottom: 320px;
+  font-size: 145px;
+  z-index: 10;
+}
+
+.footer {
+  background-color: black;
+  padding: 80px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer__list-link {
+  margin-left: 30px;
+}
